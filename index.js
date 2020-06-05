@@ -1,3 +1,5 @@
+function roll() {
+
 var randomNumber1 = Math.random();
 randomNumber1 = randomNumber1*6;
 randomNumber1 = Math.floor(randomNumber1) + 1;
@@ -41,3 +43,5 @@ if (randomNumber1 == randomNumber2){
 } else if (randomNumber1<randomNumber2){
   document.querySelector("h1").textContent = "Player 2 wins!";
 }
+}
+document.getElementsByClassName("button")[0].onclick = roll;
